@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CameraIntent!</string>
+    <string name="app_name">cameraintent</string>
+    <string name="about_title">ดอกส้มสีทอง</string>
+    <string name="about_text">ชื่อทั่วไป: ดอกส้มสีทอง  <sp></sp>
+            ชื่อวิทยาศาสตร์:เรยา วงศ์เศวต    
+           ถิ่นกำเนิด:ประเทศไทย ช่วงหลังได้ถูกนำมาแพร่ที่โอ๊คแลนด์ นิวซีแลนด์</string>
+</resources>
