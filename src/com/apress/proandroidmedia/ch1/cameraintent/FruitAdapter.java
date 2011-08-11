@@ -5,6 +5,8 @@
 package com.apress.proandroidmedia.ch1.cameraintent;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,7 +43,7 @@ class FruitAdapter extends BaseAdapter {
             final ViewGroup item = (ViewGroup)inflater.inflate(
                     R.layout.fruit_item,
                     null);
-
+            
             return item;
         }
     }
@@ -69,9 +71,18 @@ class FruitAdapter extends BaseAdapter {
         final TextView text = ((TextView)view.findViewById(R.id.text));
         final ImageView image = ((ImageView)view.findViewById(R.id.icon));
 
+        
+        if((item.name.toString().compareTo("¥Õ°Õ–‰√?")== 0) && (item.image == R.drawable.apple))
+        {
+        	Log.e("karn",item.name.toString() + " " + index);
+        	view.setBackgroundColor(Color.GREEN);
+        	text.setTextColor(Color.BLACK);
+        }
+        Log.e("karnx",item.name.toString() + " " + index);
+        
         text.setText(item.name);
         image.setImageResource(item.image);
-
+        
         return view;
     }
 

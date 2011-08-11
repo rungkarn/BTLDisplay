@@ -18,6 +18,7 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
@@ -30,6 +31,9 @@ public class CameraIntent extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        requestWindowFeature(Window.FEATURE_NO_TITLE); // Don't show the title bar.
+        
         setContentView(R.layout.main);
         
         imageFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() +

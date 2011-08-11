@@ -4,11 +4,34 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
   android:padding="10dip">
-	<TextView 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView 
 		android:id="@+id/about_content"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:textSize="18sp"
-		android:text="@string/about_text"/> 
- 	
+		android:textSize="14sp"
+		android:text="@string/generalname"/> 
+		<TextView 
+		android:id="@+id/about_content"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:text="@string/sciname"/> 
+		<TextView 
+		android:id="@+id/about_content"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:text="@string/hometown"/> 
+		<TextView 
+		android:id="@+id/about_content"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:text="@string/generalInfo"/> 
+		
+ 	</LinearLayout>
 </ScrollView>
