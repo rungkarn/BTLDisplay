@@ -16,11 +16,14 @@ class FruitItem {
 
     final String name;
 
-    final int image;
+  //  final int image;
+    final String mUri;
 
-    FruitItem(String name, int image) {
+//    FruitItem(String name, int image, String uri) {
+    FruitItem(String name, String uri) {
         this.name = name;
-        this.image = image;
+       // this.image = image;
+        this.mUri = uri;
     }
 
 }

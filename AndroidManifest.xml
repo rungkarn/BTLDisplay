@@ -23,6 +23,7 @@
         
         <activity android:name=".FourBucketsActivity" android:label="Flower Matching">
             <intent-filter>
+<!--     <action android:name="android.intent.action.MAIN" />-->
                 <action android:name="com.apress.proandroidmedia.ch1.cameraintent.FourBucketsActivity"/>
             </intent-filter>
         </activity>
